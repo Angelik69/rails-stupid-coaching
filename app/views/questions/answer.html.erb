@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Stupid Coaching</h1>
+  <div class="border-start border-4 mb-3 ps-3 ">
+    <blockquote class="blockquote "><p><%= params[:question] %></p></blockquote>
+    <figcaption class="blockquote-footer mb-1"><em>You</em></figcaption>
+  </div>
+  <div class="border-start border-4 bg-warning bg-opacity-25 mb-3 ps-3">
+    <blockquote class="blockquote"><p><strong><%= @answer %></strong></p></blockquote>
+    <figcaption class="blockquote-footer mb-1"><em>Your coach</em></figcaption>
+  </div>
+  <%= link_to 'Ask another (stupid) question', ask_path %>
+</div>
